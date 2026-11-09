@@ -397,6 +397,43 @@ def construir():
     </div>
   </section>
 """
+    # Pré-consulta: formulários para novos pacientes (fora do menu, mas pode aparecer no Google)
+    pre_consulta = """  <section class="band" aria-labelledby="pre-title">
+    <div class="wrap">
+      <div class="band-head center">
+        <p class="eyebrow">Novos pacientes</p>
+        <h1 id="pre-title">Formulário de <em>pré-consulta</em></h1>
+        <p class="lead">Antes da primeira consulta, preenche o formulário que combina contigo. Com as tuas respostas, eu chego à consulta já conhecendo a tua história, e o nosso tempo juntos rende mais.</p>
+      </div>
+      <div class="notes3 notes2">
+        <div><h3>Gestantes</h3><p>Se estás grávida, este é o teu formulário.</p><a class="btn" href="https://bit.ly/consultagestante" target="_blank" rel="noopener">Preencher formulário de gestante</a></div>
+        <div><h3>Primeira consulta</h3><p>Para todos os outros objetivos, inclusive tentantes e casais.</p><a class="btn" href="https://bit.ly/primeiraconsultaMV" target="_blank" rel="noopener">Preencher formulário de primeira consulta</a></div>
+      </div>
+    </div>
+  </section>
+"""
+    pagina("/preconsulta", "Pré-consulta | " + NOME,
+           "Formulários de pré-consulta para novos pacientes da nutricionista Marina Vaucher, em Porto Alegre e online.",
+           pre_consulta, og_inicio)
+
+    # Consulta online: página oculta (sem link no site, fora do sitemap, noindex) que leva ao Google Meet
+    MEET = "https://meet.google.com/obu-qgec-cki"
+    consulta_online = """  <section class="band notfound" aria-labelledby="online-title">
+    <div class="wrap">
+      <div class="band-head center">
+        <p class="eyebrow">Consulta online</p>
+        <h1 id="online-title">Abrindo a <em>sala da consulta</em>…</h1>
+        <p class="lead">Se o Google Meet não abrir sozinho em alguns segundos, clica no botão abaixo.</p>
+        <div class="hero-actions"><a class="btn" href="%s">Entrar na consulta</a></div>
+      </div>
+    </div>
+  </section>
+""" % MEET
+    pagina("/consultaonline", "Consulta online | " + NOME, "Sala da consulta online.",
+           consulta_online, og_inicio, indexar=False,
+           extra_head='<meta name="referrer" content="no-referrer">\n<meta http-equiv="refresh" content="0; url=%s">\n'
+                      '<script>location.replace("%s")</script>' % (MEET, MEET))
+
     pagina("/404", "Página não encontrada | " + NOME, "Esta página não existe ou mudou de endereço.",
            nao_encontrada, og_inicio, indexar=False)
 
