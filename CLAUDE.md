@@ -1,7 +1,8 @@
 # Site da Marina Vaucher, nutricionista
 
 Site estático da clínica de nutrição de Marina Vaucher, nutricionista em Porto Alegre (CRN 15651).
-Domínio: https://nutricionistamarina.com.br · Hospedagem: Netlify (publica a pasta `site/`).
+Domínio: https://nutricionistamarina.com.br · Hospedagem: GitHub Pages, repositório `nutrimarinavaucher/sitemarinavaucher`
+(o ramo `gh-pages` contém só a pasta `site/`). A cópia em sitemarinavaucher.netlify.app é antiga e não é mais atualizada.
 
 ## Como o projeto funciona
 
@@ -37,6 +38,18 @@ Endereços: `/`, `/blog/`, `/blog/<slug>`, `/areas/<slug>`. Os links antigos (`/
 3. Acrescenta o artigo em `src/posts.json` (a posição na lista define a ordem no blog). `data` no formato AAAA-MM-DD deve bater com o mês da linha de autoria. `descricao` vazia usa o `standfirst` como descrição para o Google.
 4. Se fizer sentido, inclui o slug em `artigos` da área correspondente em `src/areas.json`.
 5. Roda `.venv/bin/python build.py` e confere localmente.
+
+### Publicar no ar
+
+```
+.venv/bin/python build.py
+git add -A && git commit -m "descrição da mudança"
+git push
+git subtree push --prefix site origin gh-pages
+```
+
+O push usa a chave de publicação `.git/deploy_key` (deploy key do repositório). O GitHub Pages leva 1 a 2 minutos para atualizar.
+O build grava `site/CNAME` (domínio) e `site/.nojekyll`.
 
 O título, a descrição, o Open Graph, os dados estruturados Article e BreadcrumbList e a entrada no sitemap são gerados automaticamente.
 
