@@ -303,7 +303,7 @@ def construir():
 
     # Início
     inicio = ler("inicio.html").replace("{{cards}}", cards)
-    og_inicio = imagem_og("inicio", "hero.jpg", "50% 32%") + ("Marina Vaucher, nutricionista em Porto Alegre",)
+    og_inicio = imagem_og("inicio", "hero.jpg", "50% 38%") + ("Marina Vaucher, nutricionista em Porto Alegre",)
     antigos = {p["id_antigo"]: p["slug"] for p in posts}
     redireciona = ("<script>(function(){var m=%s,h=location.hash.slice(1);if(m[h])location.replace('/blog/'+m[h]);})();</script>"
                    % json.dumps(antigos, separators=(",", ":")))
