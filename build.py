@@ -406,8 +406,8 @@ def construir():
         <p class="lead">Antes da primeira consulta, preenche o formulário que combina contigo. Com as tuas respostas, eu chego à consulta já conhecendo a tua história, e o nosso tempo juntos rende mais.</p>
       </div>
       <div class="notes3 notes2">
+        <div><h3>Primeira consulta</h3><p>Para quem não está grávida, com qualquer objetivo, inclusive tentantes e casais.</p><a class="btn" href="https://bit.ly/primeiraconsultaMV" target="_blank" rel="noopener">Preencher formulário de primeira consulta</a></div>
         <div><h3>Gestantes</h3><p>Se estás grávida, este é o teu formulário.</p><a class="btn" href="https://bit.ly/consultagestante" target="_blank" rel="noopener">Preencher formulário de gestante</a></div>
-        <div><h3>Primeira consulta</h3><p>Para todos os outros objetivos, inclusive tentantes e casais.</p><a class="btn" href="https://bit.ly/primeiraconsultaMV" target="_blank" rel="noopener">Preencher formulário de primeira consulta</a></div>
       </div>
     </div>
   </section>
