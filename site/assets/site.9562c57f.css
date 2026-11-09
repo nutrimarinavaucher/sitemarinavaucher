@@ -453,3 +453,8 @@ body{margin:0} img{max-width:100%} [hidden]{display:none!important}
 .brand-logo { display: block; width: clamp(180px, 20vw, 250px); aspect-ratio: 447 / 73; background: var(--logo);
   -webkit-mask: url(/img/marca/logo.png) center / contain no-repeat; mask: url(/img/marca/logo.png) center / contain no-repeat; }
 @media (max-width: 340px) { .brand-logo { width: 150px; } }
+
+/* Portal do paciente (área de membros na Kiwify) */
+@media (max-width: 640px) { .nav .portal { display: none; } }
+footer .portal-link { color: var(--accent); text-decoration: none; }
+footer .portal-link:hover { text-decoration: underline; }
