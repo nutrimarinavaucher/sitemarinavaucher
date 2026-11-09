@@ -60,14 +60,6 @@
     },
     {
       "@type": "Question",
-      "name": "E se eu precisar remarcar?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sem problemas, só avisar a minha assistente com pelo menos 24 horas úteis de antecedência. Depois desse prazo, a consulta conta como realizada."
-      }
-    },
-    {
-      "@type": "Question",
       "name": "Dá pra fazer o acompanhamento em dupla?",
       "acceptedAnswer": {
         "@type": "Answer",
