@@ -1,0 +1,124 @@
+[
+  {
+    "slug": "saude-metabolica",
+    "titulo": "Saúde metabólica",
+    "titulo_seo": "Nutricionista para saúde metabólica em Porto Alegre | Marina Vaucher",
+    "texto": "Resistência à insulina, diabetes, colesterol, gordura no fígado e pressão alta, com leitura atenta dos teus exames e foco em prevenção.",
+    "tags": "Glicemia · exames · prevenção",
+    "imagem": "saude-metabolica.jpg",
+    "alt": "Ilustração de glóbulos vermelhos na corrente sanguínea",
+    "posicao": "50% 55%",
+    "descricao": "Resistência à insulina, diabetes, colesterol, gordura no fígado e pressão alta, com leitura atenta dos teus exames e foco em prevenção. Atendimento presencial em Porto Alegre e online.",
+    "artigos": [
+      "obesidade-como-entender-essa-doenca",
+      "medicamentos-anti-obesidade-e-nutricao",
+      "gordura-abdominal-nos-exames"
+    ],
+    "secoes": [
+      {
+        "titulo": "Para quem é",
+        "texto": "Para quem recebeu um exame alterado e quer entender o que fazer: glicemia ou insulina elevadas, colesterol e triglicerídeos fora da faixa, gordura no fígado, pressão alta. Também para quem tem histórico na família e quer cuidar disso antes que vire diagnóstico."
+      },
+      {
+        "titulo": "Como eu trabalho",
+        "texto": "Começo pela leitura atenta dos teus exames e pela tua história: rotina, sono, atividade física, medicamentos e o que já tentaste. A partir disso, montamos um plano alimentar possível para a tua realidade, sem cortes radicais. Quando há gordura abdominal, olho também para a composição corporal, porque a gordura visceral costuma ser a primeira a se refletir nos exames."
+      },
+      {
+        "titulo": "O que esperar do acompanhamento",
+        "texto": "Mudanças metabólicas pedem tempo e continuidade. Por isso recomendo acompanhamento de pelo menos 3 meses, com ajustes conforme a evolução dos exames. Se estiveres usando medicamentos, como os análogos de GLP-1, a nutrição caminha junto com o tratamento médico."
+      }
+    ]
+  },
+  {
+    "slug": "saude-da-mulher",
+    "titulo": "Saúde da mulher",
+    "titulo_seo": "Nutricionista para saúde da mulher em Porto Alegre | Marina Vaucher",
+    "texto": "Estratégias nutricionais para endometriose, SOP, climatério, TPM e alterações menstruais.",
+    "tags": "Endometriose · SOP · climatério",
+    "imagem": "endometriose.jpg",
+    "alt": "Mãos segurando um modelo anatômico do útero",
+    "posicao": "50% 50%",
+    "descricao": "Estratégias nutricionais para endometriose, SOP, climatério, TPM e alterações menstruais. Atendimento presencial em Porto Alegre e online.",
+    "artigos": [
+      "endometriose-e-nutricao",
+      "sop-e-alimentacao",
+      "alimentacao-no-climaterio"
+    ],
+    "secoes": [
+      {
+        "titulo": "Para quem é",
+        "texto": "Para mulheres com endometriose, síndrome dos ovários policísticos (SOP), TPM, alterações menstruais ou que estão vivendo o climatério e a menopausa."
+      },
+      {
+        "titulo": "Como eu trabalho",
+        "texto": "Cada condição tem as suas particularidades, e cada mulher vive a sua de um jeito. Na SOP, não existe uma dieta única: o plano considera a resistência à insulina, o peso, o ciclo e os teus objetivos, inclusive se há desejo de engravidar. Na endometriose, a alimentação não cura, mas pode ajudar nos sintomas e no intestino, como parte de um cuidado multiprofissional. No climatério, o foco vai para músculos, ossos, coração e bem-estar."
+      },
+      {
+        "titulo": "O que esperar do acompanhamento",
+        "texto": "Um plano construído aos poucos, sem restrições por conta própria, em diálogo com a tua ginecologista ou o teu ginecologista quando necessário."
+      }
+    ]
+  },
+  {
+    "slug": "emagrecimento-e-composicao-corporal",
+    "titulo": "Emagrecimento e composição corporal",
+    "titulo_seo": "Nutricionista para emagrecimento e composição corporal em Porto Alegre | Marina Vaucher",
+    "texto": "Perda de gordura e ganho de massa muscular para mulheres e homens, sem dietas restritivas genéricas.",
+    "tags": "Recomposição corporal",
+    "imagem": "bioimpedancia.jpg",
+    "alt": "Pessoa segurando as alças de um aparelho de bioimpedância",
+    "posicao": "50% 45%",
+    "descricao": "Perda de gordura e ganho de massa muscular para mulheres e homens, sem dietas restritivas genéricas. Atendimento presencial em Porto Alegre e online.",
+    "artigos": [
+      "composicao-corporal-alem-do-peso",
+      "massa-muscular-alem-da-estetica",
+      "gordura-abdominal-nos-exames",
+      "medicamentos-anti-obesidade-e-nutricao"
+    ],
+    "secoes": [
+      {
+        "titulo": "Para quem é",
+        "texto": "Para mulheres e homens que querem perder gordura, ganhar massa muscular ou as duas coisas, e para quem já cansou de dietas genéricas."
+      },
+      {
+        "titulo": "Como eu trabalho",
+        "texto": "Olho para além da balança. A avaliação da composição corporal, feita no consultório, mostra quanto do teu corpo é gordura, quanto é músculo e onde a gordura está. Com isso, o plano mira o que importa para a tua saúde: perder gordura preservando músculo, com proteína adequada e em sintonia com o teu treino."
+      },
+      {
+        "titulo": "O que esperar do acompanhamento",
+        "texto": "Um plano alimentar feito para a tua rotina, ajustado a cada consulta. O ritmo de cada pessoa é diferente, e os resultados variam de caso para caso."
+      }
+    ]
+  },
+  {
+    "slug": "reproducao-fertilidade-gestacao",
+    "titulo": "Reprodução: da fertilidade ao pós-parto",
+    "titulo_seo": "Nutricionista para fertilidade, FIV e gestação em Porto Alegre | Marina Vaucher",
+    "texto": "Preparo pré-concepcional para mulheres, homens e casais, reprodução assistida, acompanhamento gestacional e no puerpério.",
+    "tags": "Pré-concepção · FIV · gestação · pós-parto",
+    "imagem": "in-embriao.jpg",
+    "alt": "Representação das etapas da reprodução, da fecundação ao bebê",
+    "posicao": "50% 2%",
+    "descricao": "Preparo pré-concepcional para mulheres, homens e casais, reprodução assistida, acompanhamento gestacional e no puerpério. Atendimento presencial em Porto Alegre e online.",
+    "artigos": [
+      "tentando-engravidar",
+      "folato-antes-de-engravidar",
+      "alimentacao-e-qualidade-do-semen",
+      "ganho-de-peso-na-gestacao-e-pos-parto"
+    ],
+    "secoes": [
+      {
+        "titulo": "Para quem é",
+        "texto": "Para mulheres, homens e casais que estão planejando engravidar, em tentativas ou em tratamento de reprodução assistida (FIV), para gestantes e para quem está no pós-parto e na amamentação."
+      },
+      {
+        "titulo": "Como eu trabalho",
+        "texto": "O preparo começa cerca de 3 meses antes das tentativas, para a mulher e para o homem, porque é o tempo que óvulos e espermatozoides levam para se formar. Avalio exames, alimentação e suplementação. Recomendo o metilfolato desde cerca de 3 meses antes das tentativas, mantido durante a gestação e a amamentação, com dose definida na consulta. Na gestação, acompanho o ritmo do ganho de peso junto com exames, sintomas e bem-estar, sem usar uma curva isolada."
+      },
+      {
+        "titulo": "O que esperar do acompanhamento",
+        "texto": "Um cuidado contínuo em cada fase, que pode ser feito em dupla, com cada pessoa tendo o seu plano. Para tentantes e gestantes, o ideal é o plano Premium ou um plano montado para o teu caso."
+      }
+    ]
+  }
+]

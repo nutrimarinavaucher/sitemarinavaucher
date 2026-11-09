@@ -1,0 +1,119 @@
+[
+  {
+    "slug": "tentando-engravidar",
+    "id_antigo": "artigo-tentantes",
+    "data": "2026-11-01",
+    "categoria": "Fertilidade",
+    "imagem_card": "in-ovulo.jpg",
+    "posicao_card": "40% 50%",
+    "descricao": ""
+  },
+  {
+    "slug": "obesidade-como-entender-essa-doenca",
+    "id_antigo": "artigo-obesidade",
+    "data": "2026-11-01",
+    "categoria": "Saúde metabólica",
+    "imagem_card": "in-fita.jpg",
+    "posicao_card": "50% 58%",
+    "descricao": ""
+  },
+  {
+    "slug": "saude-intestinal",
+    "id_antigo": "artigo-saude-intestinal",
+    "data": "2026-11-01",
+    "categoria": "Saúde intestinal",
+    "imagem_card": "intestino.jpg",
+    "posicao_card": "50% 50%",
+    "descricao": ""
+  },
+  {
+    "slug": "ganho-de-peso-na-gestacao-e-pos-parto",
+    "id_antigo": "artigo-ganho-peso-gestacional",
+    "data": "2026-11-01",
+    "categoria": "Gestação",
+    "imagem_card": "gestante-cozinha.jpg",
+    "posicao_card": "50% 50%",
+    "descricao": ""
+  },
+  {
+    "slug": "massa-muscular-alem-da-estetica",
+    "id_antigo": "artigo-massa-muscular",
+    "data": "2026-11-01",
+    "categoria": "Composição corporal",
+    "imagem_card": "torrada.jpg",
+    "posicao_card": "50% 60%",
+    "descricao": ""
+  },
+  {
+    "slug": "medicamentos-anti-obesidade-e-nutricao",
+    "id_antigo": "artigo-glp1",
+    "data": "2026-11-01",
+    "categoria": "Saúde metabólica",
+    "imagem_card": "glp1-caneta.jpg",
+    "posicao_card": "50% 40%",
+    "descricao": ""
+  },
+  {
+    "slug": "endometriose-e-nutricao",
+    "id_antigo": "artigo-endometriose",
+    "data": "2026-11-01",
+    "categoria": "Saúde hormonal",
+    "imagem_card": "endometriose.jpg",
+    "posicao_card": "50% 50%",
+    "descricao": ""
+  },
+  {
+    "slug": "alimentacao-no-climaterio",
+    "id_antigo": "artigo-climaterio",
+    "data": "2026-11-01",
+    "categoria": "Mulheres 40+",
+    "imagem_card": "climaterio.jpg",
+    "posicao_card": "50% 50%",
+    "descricao": ""
+  },
+  {
+    "slug": "composicao-corporal-alem-do-peso",
+    "id_antigo": "artigo-composicao-corporal",
+    "data": "2026-11-01",
+    "categoria": "Composição corporal",
+    "imagem_card": "bioimpedancia.jpg",
+    "posicao_card": "50% 45%",
+    "descricao": ""
+  },
+  {
+    "slug": "alimentacao-e-qualidade-do-semen",
+    "id_antigo": "artigo-fertilidade-masculina",
+    "data": "2026-10-01",
+    "categoria": "Fertilidade masculina",
+    "imagem_card": "fiv-laboratorio.jpg",
+    "posicao_card": "50% 50%",
+    "descricao": ""
+  },
+  {
+    "slug": "folato-antes-de-engravidar",
+    "id_antigo": "artigo-acido-folico",
+    "data": "2026-10-01",
+    "categoria": "Pré-concepção",
+    "imagem_card": "gestante-refeicao.jpg",
+    "posicao_card": "50% 55%",
+    "descricao": ""
+  },
+  {
+    "slug": "sop-e-alimentacao",
+    "id_antigo": "artigo-sop",
+    "data": "2026-10-01",
+    "categoria": "Saúde hormonal",
+    "imagem_card": "sop.jpg",
+    "posicao_card": "50% 45%",
+    "descricao": ""
+  },
+  {
+    "slug": "gordura-abdominal-nos-exames",
+    "id_antigo": "artigo-gordura-abdominal",
+    "data": "2026-10-01",
+    "categoria": "Saúde do homem",
+    "imagem_card": "gordura-abdominal-ilustracao.jpg",
+    "posicao_card": "50% 50%",
+    "descricao": ""
+  }
+]

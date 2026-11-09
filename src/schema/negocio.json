@@ -1,0 +1,68 @@
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "@id": "https://nutricionistamarina.com.br/#negocio",
+  "name": "Marina Vaucher Nutricionista",
+  "url": "https://nutricionistamarina.com.br/",
+  "image": "https://nutricionistamarina.com.br/img/og/inicio.jpg",
+  "logo": "https://nutricionistamarina.com.br/icon-512.png",
+  "description": "Nutricionista em Porto Alegre com atendimento presencial e online: fertilidade feminina e masculina, FIV, gestação, SOP, endometriose, climatério, emagrecimento, composição corporal e saúde metabólica.",
+  "medicalSpecialty": "https://schema.org/DietNutrition",
+  "foundingDate": "2019",
+  "paymentAccepted": "Pix, dinheiro, cartão de crédito",
+  "telephone": "+55 51 99944-4797",
+  "email": "nutrimvaucher@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Mariland, 777, Trend Corporate",
+    "addressLocality": "Porto Alegre",
+    "addressRegion": "RS",
+    "addressCountry": "BR"
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Porto Alegre"
+    },
+    {
+      "@type": "Country",
+      "name": "Brasil"
+    }
+  ],
+  "sameAs": [
+    "https://instagram.com/marinavaucher",
+    "https://www.doctoralia.com.br/perfil/marina-vaucher"
+  ],
+  "founder": {
+    "@type": "Person",
+    "@id": "https://nutricionistamarina.com.br/#marina",
+    "name": "Marina Vaucher",
+    "jobTitle": "Nutricionista",
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "Registro profissional",
+      "name": "CRN 15651"
+    },
+    "alumniOf": [
+      {
+        "@type": "EducationalOrganization",
+        "name": "IPGS"
+      },
+      {
+        "@type": "EducationalOrganization",
+        "name": "Faculdade VP"
+      }
+    ],
+    "knowsAbout": [
+      "Fertilidade",
+      "FIV",
+      "Gestação",
+      "SOP",
+      "Endometriose",
+      "Climatério",
+      "Emagrecimento",
+      "Composição corporal"
+    ],
+    "url": "https://nutricionistamarina.com.br/"
+  }
+}

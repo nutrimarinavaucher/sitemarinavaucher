@@ -1,0 +1,13 @@
+# A pasta site/ é gerada localmente por build.py e publicada como está.
+[build]
+  publish = "site"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
