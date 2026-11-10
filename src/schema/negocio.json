@@ -53,6 +53,11 @@
         "name": "Faculdade VP"
       }
     ],
+    "memberOf": {
+      "@type": "Organization",
+      "name": "Sociedade Brasileira de Reprodução Humana (SBRH)",
+      "url": "https://sbrh.org.br/"
+    },
     "knowsAbout": [
       "Fertilidade",
       "FIV",
