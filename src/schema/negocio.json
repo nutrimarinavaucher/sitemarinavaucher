@@ -1,11 +1,11 @@
 {
   "@context": "https://schema.org",
   "@type": "MedicalBusiness",
-  "@id": "https://nutricionistamarina.com.br/#negocio",
+  "@id": "https://marinavaucher.com.br/#negocio",
   "name": "Marina Vaucher Nutricionista",
-  "url": "https://nutricionistamarina.com.br/",
-  "image": "https://nutricionistamarina.com.br/img/og/inicio.jpg",
-  "logo": "https://nutricionistamarina.com.br/icon-512.png",
+  "url": "https://marinavaucher.com.br/",
+  "image": "https://marinavaucher.com.br/img/og/inicio.jpg",
+  "logo": "https://marinavaucher.com.br/icon-512.png",
   "description": "Nutricionista em Porto Alegre com atendimento presencial e online: fertilidade feminina e masculina, FIV, gestação, SOP, endometriose, climatério, emagrecimento, composição corporal e saúde metabólica.",
   "medicalSpecialty": "https://schema.org/DietNutrition",
   "foundingDate": "2019",
@@ -35,7 +35,7 @@
   ],
   "founder": {
     "@type": "Person",
-    "@id": "https://nutricionistamarina.com.br/#marina",
+    "@id": "https://marinavaucher.com.br/#marina",
     "name": "Marina Vaucher",
     "jobTitle": "Nutricionista",
     "hasCredential": {
@@ -68,6 +68,6 @@
       "Emagrecimento",
       "Composição corporal"
     ],
-    "url": "https://nutricionistamarina.com.br/"
+    "url": "https://marinavaucher.com.br/"
   }
 }

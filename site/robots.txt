@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nutricionistamarina.com.br/sitemap.xml
+Sitemap: https://marinavaucher.com.br/sitemap.xml

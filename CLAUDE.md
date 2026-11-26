@@ -1,7 +1,8 @@
 # Site da Marina Vaucher, nutricionista
 
 Site estático da clínica de nutrição de Marina Vaucher, nutricionista em Porto Alegre (CRN 15651).
-Domínio: https://nutricionistamarina.com.br · Hospedagem: GitHub Pages, repositório `nutrimarinavaucher/sitemarinavaucher`
+Domínio: https://marinavaucher.com.br (desde 15/11/2026; o antigo nutricionistamarina.com.br redireciona para ele pelo repositório
+`nutrimarinavaucher/redirecionamento-nutricionistamarina`, pasta `~/Documents/redirecionamento-nutricionistamarina`) · Hospedagem: GitHub Pages, repositório `nutrimarinavaucher/sitemarinavaucher`
 (o ramo `gh-pages` contém só a pasta `site/`). A cópia em sitemarinavaucher.netlify.app é antiga e não é mais atualizada.
 
 ## Como o projeto funciona
@@ -50,6 +51,12 @@ git subtree push --prefix site origin gh-pages
 
 O push usa a chave de publicação `.git/deploy_key` (deploy key do repositório). O GitHub Pages leva 1 a 2 minutos para atualizar.
 O build grava `site/CNAME` (domínio) e `site/.nojekyll`.
+
+Ao criar uma página nova, gerar de novo as páginas de redirecionamento do domínio antigo (uma por endereço do site) e publicar
+naquele repositório; endereços sem página caem no `404.html`, que também redireciona.
+
+DNS no Registro.br: marinavaucher.com.br tem os 4 registros A do GitHub Pages e `www` CNAME `nutrimarinavaucher.github.io`.
+No nutricionistamarina.com.br, o `www` é a área de membros da Kiwify (Portal do paciente) e o MX é o e-mail: não mexer.
 
 O título, a descrição, o Open Graph, os dados estruturados Article e BreadcrumbList e a entrada no sitemap são gerados automaticamente.
 

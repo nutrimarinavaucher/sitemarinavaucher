@@ -16,7 +16,7 @@ from pathlib import Path
 
 from PIL import Image, ImageFilter
 
-SITE = "https://nutricionistamarina.com.br"
+SITE = "https://marinavaucher.com.br"
 NOME = "Marina Vaucher Nutricionista"
 ROOT = Path(__file__).resolve().parent
 SRC = ROOT / "src"
@@ -444,7 +444,7 @@ def construir():
     # Cabeçalhos de cache do Netlify (vale também para publicação por upload manual)
     gravar("_headers", "/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n\n/img/*\n  Cache-Control: public, max-age=604800\n")
     # GitHub Pages: domínio próprio e publicação dos arquivos como estão
-    gravar("CNAME", "nutricionistamarina.com.br\n")
+    gravar("CNAME", "marinavaucher.com.br\n")
     gravar(".nojekyll", "")
     print("Site gerado em site/: %d páginas no sitemap." % len(MAPA))
 
