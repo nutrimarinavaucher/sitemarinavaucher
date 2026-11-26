@@ -91,7 +91,7 @@ O título, a descrição, o Open Graph, os dados estruturados Article e Breadcru
 
 ## SEO
 
-- Google Search Console: propriedade de domínio `nutricionistamarina.com.br` na conta nutrimvaucher@gmail.com, verificada por TXT no Registro.br (não remover). Sitemap enviado em 09/11/2026.
+- Google Search Console (conta nutrimvaucher@gmail.com): propriedade de domínio `marinavaucher.com.br`, verificada por TXT no Registro.br em 26/11/2026, sitemap enviado no mesmo dia. A propriedade antiga `nutricionistamarina.com.br` continua lá. Os TXT de verificação dos dois domínios não podem ser removidos.
 
 - Palavra-chave principal: “nutricionista em Porto Alegre”. Cada página tem `<title>` e descrição próprios (definidos em `build.py`, `posts.json` e `areas.json`).
 - Dados estruturados: MedicalBusiness, FAQPage e WebSite (início); Blog (blog); Article e BreadcrumbList (artigos); Service e BreadcrumbList (áreas).
