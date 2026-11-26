@@ -9,6 +9,51 @@
     "descricao": "Existem alimentos inflamatórios? Leite e glúten não inflamam todo mundo. Entende o que PCR, ferritina e outros exames mostram e por que o excesso de gordura corporal pesa tanto."
   },
   {
+    "slug": "nutricionista-em-porto-alegre-primeira-consulta",
+    "id_antigo": "",
+    "data": "2026-11-26",
+    "categoria": "Consulta",
+    "imagem_card": "bioimpedancia.jpg",
+    "posicao_card": "50% 50%",
+    "descricao": "Nutricionista em Porto Alegre: o que acontece na primeira consulta, o que levar, como funciona o atendimento presencial e online e por que acompanhar."
+  },
+  {
+    "slug": "alimentacao-e-fiv",
+    "id_antigo": "",
+    "data": "2026-11-26",
+    "categoria": "Fertilidade",
+    "imagem_card": "in-embriao.jpg",
+    "posicao_card": "50% 30%",
+    "descricao": "Alimentação e FIV: quando começar o preparo, o que a evidência mostra, exames, suplementos e o papel do parceiro na fertilização in vitro."
+  },
+  {
+    "slug": "resistencia-a-insulina",
+    "id_antigo": "",
+    "data": "2026-11-26",
+    "categoria": "Saúde metabólica",
+    "imagem_card": "saude-metabolica.jpg",
+    "posicao_card": "50% 55%",
+    "descricao": "Resistência à insulina: sinais, exames (glicemia, insulina, HOMA-IR, curva glicêmica) e o que a alimentação e o estilo de vida podem fazer."
+  },
+  {
+    "slug": "diabetes-gestacional",
+    "id_antigo": "",
+    "data": "2026-11-26",
+    "categoria": "Gestação",
+    "imagem_card": "gestante-refeicao.jpg",
+    "posicao_card": "50% 55%",
+    "descricao": "Diabetes gestacional: como é o diagnóstico, o que comer, como distribuir os carboidratos e o que fazer depois do parto."
+  },
+  {
+    "slug": "gordura-no-figado",
+    "id_antigo": "",
+    "data": "2026-11-26",
+    "categoria": "Saúde metabólica",
+    "imagem_card": "frutas.jpg",
+    "posicao_card": "50% 45%",
+    "descricao": "Gordura no fígado (esteatose hepática): o que é, como aparece nos exames e como a alimentação e a atividade física ajudam."
+  },
+  {
     "slug": "tentando-engravidar",
     "id_antigo": "artigo-tentantes",
     "data": "2026-11-01",

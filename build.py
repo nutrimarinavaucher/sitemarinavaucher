@@ -256,6 +256,15 @@ def card(p):
             % (p["slug"], p["imagem_card"], p["posicao_card"], p["categoria"], p["titulo"]))
 
 
+def perguntas_frequentes(corpo):
+    """Pares (pergunta, resposta) da seção <h2>Perguntas frequentes</h2> de um artigo (h3 seguido de p)."""
+    m = re.search(r"<h2>Perguntas frequentes</h2>(.*?)(?=<h2>|</div>\s*<div class=\"post-foot\">)", corpo, re.S)
+    if not m:
+        return []
+    return [(sem_tags(q).strip(), sem_tags(r).strip())
+            for q, r in re.findall(r"<h3>(.*?)</h3>\s*<p>(.*?)</p>", m.group(1), re.S)]
+
+
 def carregar_posts():
     posts = json.loads(ler("posts.json"))
     for p in posts:
@@ -298,8 +307,8 @@ def construir():
     faq = json.loads(ler("schema/faq.json"))
     ref_negocio = {"@type": "MedicalBusiness", "@id": SITE + "/#negocio", "name": NOME,
                    "logo": {"@type": "ImageObject", "url": SITE + "/icon-512.png"}}
-    autora = {"@type": "Person", "@id": SITE + "/#marina", "name": "Marina Vaucher",
-              "jobTitle": "Nutricionista", "url": SITE + "/"}
+    # Autora dos artigos: os mesmos dados de Marina do schema do negócio (CRN, formação, SBRH, redes)
+    autora = dict(negocio["founder"], sameAs=negocio.get("sameAs", []))
 
     # Início
     inicio = ler("inicio.html").replace("{{cards}}", cards)
@@ -336,10 +345,14 @@ def construir():
                      "datePublished": p["data"], "dateModified": p.get("atualizado") or p["data"],
                      "inLanguage": "pt-BR", "articleSection": p["categoria"], "author": autora,
                      "publisher": ref_negocio, "mainEntityOfPage": SITE + caminho}
+        lds = [artigo_ld, migalhas(("Início", "/"), ("Blog", "/blog/"), (titulo, caminho))]
+        perguntas = perguntas_frequentes(p["corpo"])
+        if perguntas:
+            lds.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+                {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": r}} for q, r in perguntas]})
         pagina(caminho, "%s | Marina Vaucher" % titulo, descricao,
                '<article class="post">\n%s\n</article>\n' % p["corpo"].rstrip(), og,
-               ld=[artigo_ld, migalhas(("Início", "/"), ("Blog", "/blog/"), (titulo, caminho))],
-               tipo="article", artigo=p)
+               ld=lds, tipo="article", artigo=p)
 
     # Áreas de atuação
     zap = re.search(r'href="(https://wa\.me/[^"]+)"', inicio).group(1)
@@ -441,6 +454,35 @@ def construir():
     linhas = "\n".join("  <url><loc>%s</loc><lastmod>%s</lastmod></url>" % u for u in MAPA)
     gravar("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n%s\n</urlset>\n' % linhas)
     gravar("robots.txt", "User-agent: *\nAllow: /\n\nSitemap: %s/sitemap.xml\n" % SITE)
+    # llms.txt: resumo do site em texto simples para assistentes de IA (formato proposto em llmstxt.org)
+    linhas_blog = "\n".join("- [%s](%s/blog/%s): %s" % (sem_tags(p["titulo"]), SITE, p["slug"], p.get("descricao") or p["resumo"])
+                             for p in posts)
+    linhas_areas = "\n".join("- [%s](%s/areas/%s): %s" % (sem_tags(a["titulo"]), SITE, a["slug"], a["descricao"]) for a in areas)
+    gravar("llms.txt", """# Marina Vaucher, nutricionista em Porto Alegre
+
+> Marina Vaucher é nutricionista (CRN 15651) com atendimento presencial em Porto Alegre (Trend Corporate, Av. Mariland, 777)
+> e online para todo o Brasil e o exterior. Atua em fertilidade feminina e masculina, preparo para FIV, gestação, SOP,
+> endometriose, climatério, emagrecimento, composição corporal e saúde metabólica, com conduta baseada em evidência.
+> Membro da Sociedade Brasileira de Reprodução Humana (SBRH). Atendimento clínico desde 2019.
+
+- Agendamento: WhatsApp +55 51 99944-4797 (https://wa.me/5551999444797)
+- E-mail: {email}
+- Instagram: https://instagram.com/marinavaucher
+
+## Áreas de atuação
+
+{areas}
+
+## Artigos do blog
+
+{blog}
+
+## Páginas
+
+- [Início]({site}/): apresentação, como funciona o atendimento, planos de acompanhamento e perguntas frequentes
+- [Blog]({site}/blog/): todos os artigos
+- [Pré-consulta]({site}/preconsulta): formulários para novos pacientes
+""".format(email=negocio.get("email", ""), areas=linhas_areas, blog=linhas_blog, site=SITE))
     # Cabeçalhos de cache do Netlify (vale também para publicação por upload manual)
     gravar("_headers", "/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n\n/img/*\n  Cache-Control: public, max-age=604800\n")
     # GitHub Pages: domínio próprio e publicação dos arquivos como estão
